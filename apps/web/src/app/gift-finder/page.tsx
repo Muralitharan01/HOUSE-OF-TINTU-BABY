@@ -2,8 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Gift, Sparkles, Check, ArrowRight, RotateCcw, Heart, ShoppingBag } from 'lucide-react';
+import { Gift, Sparkles, Check, ArrowRight, RotateCcw, ShoppingBag } from 'lucide-react';
 import { PRODUCTS } from '@/data/mockData';
 import { useCartStore } from '@/store/useAppStore';
 
@@ -73,7 +72,7 @@ export default function GiftFinderPage() {
                   ].map((item) => (
                     <button
                       key={item.id}
-                      onClick={() => setGender(item.id as any)}
+                      onClick={() => setGender(item.id as 'boy' | 'girl' | 'neutral')}
                       className={`p-6 rounded-2xl border flex flex-col items-center text-center gap-3 transition-all ${
                         gender === item.id
                           ? 'border-[var(--color-brand-primary)] bg-[var(--color-bg-secondary)] shadow-md'

@@ -185,7 +185,7 @@ export default function CheckoutPage() {
                   ].map((method) => (
                     <label
                       key={method.id}
-                      onClick={() => setPaymentMethod(method.id as any)}
+                      onClick={() => setPaymentMethod(method.id as 'upi' | 'razorpay' | 'cod')}
                       className={`p-4 rounded-2xl border flex items-center gap-3 cursor-pointer transition-all ${
                         paymentMethod === method.id
                           ? 'border-[var(--color-brand-primary)] bg-[var(--color-bg-secondary)] shadow-xs'

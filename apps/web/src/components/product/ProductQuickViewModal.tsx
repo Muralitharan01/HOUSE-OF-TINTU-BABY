@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { X, Star, ShoppingBag, Heart, ShieldCheck, Check } from 'lucide-react';
+import { X, Star, ShoppingBag, Heart, Check } from 'lucide-react';
 import { Product } from '@/types';
 import { useCartStore, useWishlistStore } from '@/store/useAppStore';
 

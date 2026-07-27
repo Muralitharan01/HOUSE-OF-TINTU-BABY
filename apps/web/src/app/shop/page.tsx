@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Filter, SlidersHorizontal, Heart, ShoppingBag, Star, ChevronDown } from 'lucide-react';
+import { Filter, Heart, ShoppingBag, Star } from 'lucide-react';
 import { PRODUCTS, AGE_GROUPS, COLLECTIONS } from '@/data/mockData';
 import { useCartStore, useWishlistStore } from '@/store/useAppStore';
 
@@ -11,7 +11,6 @@ export default function ShopPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedAge, setSelectedAge] = useState<string>('all');
   const [selectedCollection, setSelectedCollection] = useState<string>('all');
-  const [sortBy, setSortBy] = useState<string>('featured');
 
   const addItem = useCartStore((state) => state.addItem);
   const { toggleWishlist, isInWishlist } = useWishlistStore();

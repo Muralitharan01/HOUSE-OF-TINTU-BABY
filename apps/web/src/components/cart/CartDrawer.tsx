@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { X, Trash2, Plus, Minus, ShoppingBag, Gift, ArrowRight } from 'lucide-react';
+import { X, Trash2, Plus, Minus, ShoppingBag, ArrowRight } from 'lucide-react';
 import { useCartStore } from '@/store/useAppStore';
 
 export const CartDrawer: React.FC = () => {

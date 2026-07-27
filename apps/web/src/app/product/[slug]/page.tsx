@@ -15,7 +15,6 @@ import {
   Check,
   Rotate3d,
   ChevronRight,
-  Share2,
 } from 'lucide-react';
 import { PRODUCTS } from '@/data/mockData';
 import { useCartStore, useWishlistStore } from '@/store/useAppStore';
@@ -28,7 +27,7 @@ export default function ProductDetailPage() {
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedSize, setSelectedSize] = useState('1-2 Yrs');
   const [selectedColor, setSelectedColor] = useState('Organic Cream');
-  const [quantity, setQuantity] = useState(1);
+  const quantity = 1;
   const [is360Mode, setIs360Mode] = useState(false);
 
   const addItem = useCartStore((state) => state.addItem);

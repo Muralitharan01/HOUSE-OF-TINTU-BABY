@@ -49,7 +49,7 @@ export const GiftFinderTeaser: React.FC = () => {
                 ].map((item) => (
                   <button
                     key={item.id}
-                    onClick={() => setRecipient(item.id as any)}
+                    onClick={() => setRecipient(item.id as 'boy' | 'girl' | 'neutral')}
                     className={`flex flex-col items-center p-3.5 rounded-2xl border text-xs font-bold transition-all ${
                       recipient === item.id
                         ? 'bg-[#2D4A3E] text-white border-[#2D4A3E] shadow-md scale-105'

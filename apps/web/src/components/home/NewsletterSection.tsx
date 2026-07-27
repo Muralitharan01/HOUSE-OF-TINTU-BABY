@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Send, Sparkles } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 export const NewsletterSection: React.FC = () => {
   const [subscribed, setSubscribed] = useState(false);

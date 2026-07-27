@@ -2,12 +2,12 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { User, Package, MapPin, Wallet, Gift, Heart, Sparkles, LogOut, ChevronRight } from 'lucide-react';
+import { Package, MapPin, Wallet, Heart } from 'lucide-react';
 import { useWishlistStore } from '@/store/useAppStore';
 
 export default function AccountPage() {
   const [activeTab, setActiveTab] = useState<'orders' | 'addresses' | 'wallet' | 'rewards'>('orders');
-  const wishlistCount = useWishlistStore((state) => state.wishlistIds.length);
+  useWishlistStore((state) => state.wishlistIds.length);
 
   const pastOrders = [
     { id: 'HOT-94820', date: 'July 24, 2026', items: 'Linen Dungaree Set', total: '₹1,398', status: 'In Transit', tracking: 'DTDC-884210' },
@@ -59,7 +59,7 @@ export default function AccountPage() {
               return (
                 <button
                   key={tab.id}
-                  onClick={() => setActiveTab(tab.id as any)}
+                  onClick={() => setActiveTab(tab.id as 'orders' | 'addresses' | 'wallet' | 'rewards')}
                   className={`flex items-center gap-3 p-3 rounded-xl text-xs font-bold transition-all text-left ${
                     activeTab === tab.id
                       ? 'bg-[var(--color-brand-primary)] text-white shadow-sm'

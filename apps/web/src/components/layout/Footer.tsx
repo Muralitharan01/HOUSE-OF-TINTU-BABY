@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Heart, Instagram, Facebook, Twitter, Youtube, ShieldCheck, Truck, RefreshCw } from 'lucide-react';
+import { Instagram, Facebook, Twitter, Youtube, ShieldCheck, Truck, RefreshCw } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (

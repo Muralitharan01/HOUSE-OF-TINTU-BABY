@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Heart, Camera, Plus, Share2, Sparkles, Calendar } from 'lucide-react';
+import { Heart, Plus, Share2, Calendar } from 'lucide-react';
 import { MEMORY_ITEMS } from '@/data/mockData';
 
 export default function MemoryBookPage() {
