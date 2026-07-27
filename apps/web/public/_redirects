@@ -1,2 +1,1 @@
-# Netlify Next.js SPA/SSR Redirect Rule
-/*  /.netlify/functions/next  200
+/*    /index.html   200
